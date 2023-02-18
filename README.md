@@ -8,5 +8,7 @@ This bucket is mainly for [Scooper](https://github.com/windedge/Scooper), a GUI 
 How do I install these manifests?
 ---------------------------------
 
-To add this bucket, run `scoop bucket add ladle https://github.com/windedge/ladle-bucket`. To install [Scooper](https://github.com/windedge/scooper), do `scoop install scooper`.
+To add this bucket, run `scoop bucket add ladle https://github.com/windedge/ladle-bucket`.
+
+To install [Scooper](https://github.com/windedge/scooper), do `scoop install scooper`.
 
