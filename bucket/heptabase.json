@@ -1,5 +1,5 @@
 {
-    "version": "1.30.6",
+    "version": "1.31.0",
     "description": "Heptabase is a visual note-taking app that helps you learn complex topics",
     "homepage": "https://heptabase.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/heptameta/project-meta/releases/download/v1.30.6/Heptabase-Setup-1.30.6.exe#/dl.7z",
-            "hash": "sha512:65afac5ef36520e88713b2f629f0bc63ea12df729fea36d49e945b31713ac57696be80f1c1d5c434bba6ce3cbde581d8c0e4907a45da810000b282e133d5fbe1",
+            "url": "https://github.com/heptameta/project-meta/releases/download/v1.31.0/Heptabase-Setup-1.31.0.exe#/dl.7z",
+            "hash": "sha512:b0b31ebf2b1904c4b5fbbdeaf71863b3df7002edc5f109a08d7cd6c3f06026653410700e4846ec49a88e51e4fe12ab4e33ca40b8fb88d294f7f2bd0c909cb68e",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
