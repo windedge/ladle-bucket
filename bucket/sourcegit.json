@@ -1,6 +1,6 @@
 {
     "version": "8.15",
-    "description": "Native Kubernetes desktop client.",
+    "description": "A cross-platform Git client written in AvaloniaUI.",
     "homepage": "https://github.com/sourcegit-scm/sourcegit",
     "license": "MIT",
     "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v8.15/sourcegit_8.15.win-x64.zip",
