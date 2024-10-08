@@ -1,10 +1,10 @@
 {
-    "version": "8.32",
+    "version": "8.33",
     "description": "Windows/macOS/Linux GUI client for GIT users",
     "homepage": "https://github.com/sourcegit-scm/sourcegit",
     "license": "MIT",
-    "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v8.32/sourcegit_8.32.win-x64.zip",
-    "hash": "08de96af3cf65f4db3a6d941f5a3b4b985e48e56d9f2647d11d60b876a0d9c5b",
+    "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v8.33/sourcegit_8.33.win-x64.zip",
+    "hash": "f61816274e1d3502fee26ae241739c509d8f5a31bea9985c9f7c6781ae7f038a",
     "extract_dir": "SourceGit",
     "shortcuts": [
         [
