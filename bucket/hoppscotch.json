@@ -1,10 +1,10 @@
 {
-    "version": "24.10.2-0",
+    "version": "24.11.0-0",
     "description": "Hoppscotch Desktop App",
     "homepage": "https://github.com/hoppscotch/releases",
     "license": "MIT License",
-    "url": "https://github.com/hoppscotch/releases/releases/download/v24.10.2-0/Hoppscotch_win_x64.msi",
-    "hash": "e9b4091f474eb91744a168a693c1335f70236cc0c28ac8115e4ee80c842ec1ca",
+    "url": "https://github.com/hoppscotch/releases/releases/download/v24.11.0-0/Hoppscotch_win_x64.msi",
+    "hash": "0c0742e15c3a75e0debe38761c30cd50af06588d74634e005c42a463bd014831",
     "extract_dir": "PFiles\\Hoppscotch\\",
     "shortcuts": [
         [
