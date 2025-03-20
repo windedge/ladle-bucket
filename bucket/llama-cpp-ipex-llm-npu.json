@@ -1,0 +1,36 @@
+{
+    "homepage": "https://github.com/intel/ipex-llm",
+    "description": "IPEX-LLM (Intel Extension for PyTorch) nightly build with llama.cpp - NPU version",
+    "license": "MIT",
+    "version": "2.2.0b20250313",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/intel/ipex-llm/releases/download/v2.2.0-nightly/llama-cpp-ipex-llm-2.2.0b20250313-win-npu.zip",
+            "hash": "333648660a1ca9e5cdf4cffa23d287e839dfb65bbf247748912aab7f1fd8b783"
+        }
+    },
+    "bin": [
+        "llama-cli-npu.exe"
+    ],
+"checkver": {
+        "script": [
+            "$releasesPage = 'https://github.com/intel/ipex-llm/releases/'",
+            "$releasesContent = Invoke-WebRequest -Uri $releasesPage -UseBasicParsing",
+            "$nightlyTag = [regex]::Match($releasesContent.Content, 'href=\"/intel/ipex-llm/releases/tag/(v[\\d\\.]+-nightly)\"').Groups[1].Value",
+            "$nightlyPage = \"https://github.com/intel/ipex-llm/releases/tag/$nightlyTag\"",
+            "$nightlyContent = Invoke-WebRequest -Uri $nightlyPage -UseBasicParsing",
+            "$downloadUrl = [regex]::Match($nightlyContent.Content, 'href=\"(/intel/ipex-llm/releases/download/' + $nightlyTag + '/ipex-llm-llama-cpp-windows-x64-' + $nightlyTag + '\\-npu.zip)\"').Groups[1].Value",
+            "Write-Output \"$nightlyTag|$('https://github.com' + $downloadUrl)\""
+        ],
+        "regex": "^([^|]+)\\|(.+)$",
+        "replace": "${1}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$match2",
+                "extract_dir": "ipex-llm-llama-cpp-windows-x64-$match1"
+            }
+        }
+    }
+}
