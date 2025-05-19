@@ -1,10 +1,10 @@
 {
-    "version": "2025.17",
+    "version": "2025.18",
     "description": "Windows/macOS/Linux GUI client for GIT users",
     "homepage": "https://github.com/sourcegit-scm/sourcegit",
     "license": "MIT",
-    "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.17/sourcegit_2025.17.win-x64.zip",
-    "hash": "94c9e0d63ed6f6d6eaf4ff61ec8e3ac259cdf0276f1b4be308e43bf2d76237d1",
+    "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.18/sourcegit_2025.18.win-x64.zip",
+    "hash": "fb20564f4401d001f8d7bb42c9f4d98d8a6959e7062c819b6ec44487389975b3",
     "extract_dir": "SourceGit",
     "shortcuts": [
         [
