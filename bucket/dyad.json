@@ -1,12 +1,12 @@
 {
-    "version": "0.24.0",
+    "version": "0.25.0",
     "description": "Dyad is a local, open-source AI app builder",
     "homepage": "https://github.com/dyad-sh/dyad",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dyad-sh/dyad/releases/download/v0.24.0/dyad-0.24.0.Setup.exe",
-            "hash": "889e478febad75b883f6f485595694b4337e15e4747afef4cc8b9231648d70bc",
+            "url": "https://github.com/dyad-sh/dyad/releases/download/v0.25.0/dyad-0.25.0.Setup.exe",
+            "hash": "524a4e3df2fab91f56dc401d4a18c0411dc08b1c5c710477a4d10cbb5cc497ff",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\$fname\" \"$dir\"",
