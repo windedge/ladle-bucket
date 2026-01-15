@@ -1,12 +1,12 @@
 {
-    "version": "0.80.0",
+    "version": "0.85.0",
     "description": "Codex CLI tool for AI code generation",
     "homepage": "https://github.com/openai/codex",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.80.0/codex-x86_64-pc-windows-msvc.exe.zip",
-            "hash": "3b708be86a37f0e0f75880350e0134d6f513b1aff3cd773979b31219f1e63e85",
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.85.0/codex-x86_64-pc-windows-msvc.exe.zip",
+            "hash": "ad00de3526c603384d186cd5970a14f6e512e5334f03c8448da3958ac0a8716f",
             "bin": [
                 [
                     "codex-x86_64-pc-windows-msvc.exe",
@@ -15,8 +15,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.80.0/codex-aarch64-pc-windows-msvc.exe.zip",
-            "hash": "6ddeafa2eb3c075125e289c190bc739e5ffd7220c40105a984a5828a18e7ad86",
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.85.0/codex-aarch64-pc-windows-msvc.exe.zip",
+            "hash": "780928281967c09b0a0d33f2bedbc161707afd63aa6fd44d7d184a733575be1c",
             "bin": [
                 [
                     "codex-aarch64-pc-windows-msvc.exe",
