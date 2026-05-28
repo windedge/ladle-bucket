@@ -19,7 +19,9 @@
             "Zap"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/zerx-lab/zap"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
