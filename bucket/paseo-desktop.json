@@ -20,7 +20,9 @@
             "Paseo"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/getpaseo/paseo"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
