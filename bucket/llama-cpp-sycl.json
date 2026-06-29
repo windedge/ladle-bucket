@@ -71,7 +71,7 @@
             "llama-tts-sycl"
         ],
         [
-            "rpc-server.exe",
+            "ggml-rpc-server.exe",
             "rpc-server-sycl"
         ]
     ],
