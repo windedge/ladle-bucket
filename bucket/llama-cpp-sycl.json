@@ -11,6 +11,10 @@
     },
     "bin": [
         [
+            "llama.exe",
+            "llama-sycl"
+        ],
+        [
             "llama-cli.exe",
             "llama-cli-sycl"
         ],

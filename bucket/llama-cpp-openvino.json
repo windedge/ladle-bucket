@@ -11,6 +11,10 @@
     },
     "bin": [
         [
+            "llama.exe",
+            "llama-openvino"
+        ],
+        [
             "llama-cli.exe",
             "llama-cli-openvino"
         ],

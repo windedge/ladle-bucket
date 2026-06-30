@@ -11,6 +11,10 @@
     },
     "bin": [
         [
+            "llama.exe",
+            "llama-vulkan"
+        ],
+        [
             "llama-cli.exe",
             "llama-cli-vulkan"
         ],
