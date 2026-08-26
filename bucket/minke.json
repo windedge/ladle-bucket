@@ -1,0 +1,33 @@
+{
+    "version": "0.3.0",
+    "description": "Agent browser with shared human control and remote control through WeChat, Telegram, and Discord",
+    "homepage": "https://github.com/lencx/Minke",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lencx/Minke/releases/download/v0.3.0/Minke-windows-x64.exe#/dl.7z",
+            "hash": "81003d28b1bfe35ea4a5bf13c3f86aa283c75122eace78efdc4c0d587b4f547b",
+            "bin": "Minke.exe"
+        }
+    },
+    "shortcuts": [
+        [
+            "Minke.exe",
+            "Minke"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/lencx/Minke"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lencx/Minke/releases/download/v$version/Minke-windows-x64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS",
+            "find": "$basename"
+        }
+    }
+}
