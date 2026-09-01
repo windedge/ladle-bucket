@@ -11,26 +11,16 @@
     },
     "extract_dir": "wake-0.3.1-windows-x86_64",
     "bin": "Wake.exe",
-    "persist": [
-        "data"
-    ],
     "shortcuts": [
         [
             "Wake.exe",
             "Wake"
         ]
     ],
-    "pre_install": [
-        "if (!(Test-Path \"$dir\\data\")) { New-Item -ItemType Directory -Path \"$dir\\data\" | Out-Null }"
-    ],
-    "env_set": {
-        "WAKE_HOME": "$persist_dir\\data"
-    },
     "notes": [
         "Windows support is experimental (since v0.2.7).",
         "Wake.exe is unsigned; SmartScreen may block first launch (click More info -> Run anyway).",
-        "Wake reads agent sessions from external ~/.claude-style directories read-only. WAKE_HOME redirects where Wake looks for agent data (portable installs/testing).",
-        "Setting WAKE_HOME to $dir\\data keeps all Wake data inside the portable install; by default Wake's own index lives at %LOCALAPPDATA%\\wake."
+        "Wake reads agent sessions from external ~/.claude-style directories read-only; Wake's own index lives at %LOCALAPPDATA%\\wake by default."
     ],
     "checkver": {
         "github": "https://github.com/iAmCorey/Wake"
