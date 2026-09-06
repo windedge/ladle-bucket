@@ -9,10 +9,9 @@
             "hash": "2433ad8d5117f190bbab05f1b85f60938ce3f72abe528764b6961f05b17c4272"
         }
     },
-    "extract_dir": "Andy",
     "shortcuts": [
         [
-            "Andy\\Andy.exe",
+            "Andy.exe",
             "Andy"
         ]
     ],
@@ -26,8 +25,7 @@
                 "url": "https://github.com/j-roskopf/Andy/releases/download/release/$version/Andy-$version.msi",
                 "hash": {
                     "url": "https://github.com/j-roskopf/Andy/releases/download/release/$version/Andy-$version.msi"
-                },
-                "extract_dir": "Andy"
+                }
             }
         }
     }
