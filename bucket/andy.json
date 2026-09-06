@@ -1,5 +1,5 @@
 {
-    "version": "release/2026.0905.2142",
+    "version": "2026.0905.2142",
     "description": "Multi-platform workspace companion and remote control tool for Android and embedded devices",
     "homepage": "https://github.com/j-roskopf/Andy",
     "license": "MIT",
@@ -18,16 +18,14 @@
     ],
     "checkver": {
         "github": "https://github.com/j-roskopf/Andy",
-        "regex": "releases/tag/(release/([0-9.]+))"
+        "regex": "releases/tag/release/([0-9.]+)"
     },
     "autoupdate": {
-        "version_regex": "release/(?<os_version>[0-9.]+)",
         "architecture": {
             "64bit": {
                 "url": "https://github.com/j-roskopf/Andy/releases/download/release/$version/Andy-$version.msi",
                 "hash": {
-                    "url": "https://github.com/j-roskopf/Andy/releases/download/release/$version/Andy-$version.msi",
-                    "mode": "extract"
+                    "url": "https://github.com/j-roskopf/Andy/releases/download/release/$version/Andy-$version.msi"
                 },
                 "extract_dir": "Andy"
             }
