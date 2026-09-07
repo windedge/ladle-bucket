@@ -1,0 +1,35 @@
+{
+    "version": "1.0.3",
+    "description": "Pomodoist task management and focus application",
+    "homepage": "https://github.com/Kabanya/Pomodoist",
+    "license": "AGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Kabanya/Pomodoist/releases/download/v1.0.3/Pomodoist-Setup.exe",
+            "hash": "4220b30cb701b22e153b6fa6c9535e5d16e0e64c3905c1472506e78cf840f340"
+        }
+    },
+    "extract_dir": "{app}",
+    "innosetup": true,
+    "bin": "pomodoist.exe",
+    "shortcuts": [
+        [
+            "pomodoist.exe",
+            "Pomodoist"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Kabanya/Pomodoist"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Kabanya/Pomodoist/releases/download/v$version/Pomodoist-Setup.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/Pomodoist-Setup.exe.sha256",
+            "regex": "^([a-fA-F0-9]{64})"
+        }
+    }
+}
