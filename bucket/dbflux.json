@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/0xErwin1/dbflux/releases/download/v0.7.7/dbflux-windows-amd64.zip",
-            "hash": "94d53861fb1ccaebe67d266ea8d6131c9a62657a8274044b6c3116cb79ea75bb"
+            "hash": "7544d911ea7e59c4185eb0a7c872a1b6560a70f20bca07c9064936b360963be4"
         }
     },
     "bin": "dbflux.exe",
