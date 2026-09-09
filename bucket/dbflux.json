@@ -1,0 +1,29 @@
+{
+    "version": "0.7.7",
+    "description": "An extensible, keyboard-first data platform delivered as a Rust + GPUI desktop client.",
+    "homepage": "https://dbflux.dev",
+    "license": "MIT AND Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/0xErwin1/dbflux/releases/download/v0.7.7/dbflux-windows-amd64.zip",
+            "hash": "94d53861fb1ccaebe67d266ea8d6131c9a62657a8274044b6c3116cb79ea75bb"
+        }
+    },
+    "bin": "dbflux.exe",
+    "shortcuts": [
+        [
+            "dbflux.exe",
+            "DBFlux"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/0xErwin1/dbflux"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/0xErwin1/dbflux/releases/download/v$version/dbflux-windows-amd64.zip"
+            }
+        }
+    }
+}
