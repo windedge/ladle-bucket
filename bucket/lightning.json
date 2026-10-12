@@ -1,0 +1,41 @@
+{
+    "version": "0.10.0",
+    "description": "A native desktop Matrix client: Qt 6 on top of the official Rust Matrix SDK",
+    "homepage": "https://www.lightning-matrix.org",
+    "license": "GPL-3.0-or-later",
+    "notes": [
+        "User data (account stores, crypto store, cache, unencrypted message content) is stored outside the install directory at %LOCALAPPDATA%\\MatrixClient\\matrix-client (Qt AppLocalDataLocation); Scoop cannot persist it.",
+        "The portable ZIP writes no registry keys and installs no shortcuts itself; delete the folder to uninstall.",
+        "Windows packages are unsigned, so SmartScreen warns on first launch."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Mizerd/lightning/releases/download/v0.10.0/Lightning-0.10.0-1e80899-windows-x86_64-portable.zip",
+            "hash": "bae56a2fd900a9ce57e4e4ffe7fd49cf4ffcb7aef01e71298d11e6ef49a25933"
+        }
+    },
+    "extract_dir": "Lightning",
+    "bin": "Lightning.exe",
+    "shortcuts": [
+        [
+            "Lightning.exe",
+            "lightning-matrix"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Mizerd/lightning",
+        "regex": "Lightning-([0-9.]+)-(\\w+)-windows-x86_64-portable\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Mizerd/lightning/releases/download/v$version/Lightning-$version-$match2-windows-x86_64-portable.zip",
+                "extract_dir": "Lightning"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS",
+            "find": "$basename"
+        }
+    }
+}
