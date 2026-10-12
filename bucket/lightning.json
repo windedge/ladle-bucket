@@ -19,7 +19,7 @@
     "shortcuts": [
         [
             "Lightning.exe",
-            "lightning-matrix"
+            "Lightning"
         ]
     ],
     "checkver": {
