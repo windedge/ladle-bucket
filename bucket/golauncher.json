@@ -1,20 +1,16 @@
 {
-    "version": "0.6.0",
-    "description": "A Raycast-style launcher for Windows, written in Go with the MyGo native UI toolkit",
+    "version": "0.9.0",
+    "description": "A Raycast-style launcher for Windows and macOS, written in Go",
     "homepage": "https://github.com/eziq1/golauncher",
     "license": "MIT",
-    "notes": [
-        "golauncher stores its configuration and data outside the install directory: settings in %APPDATA%\\golauncher (config.json, themes, plugins, scripts) and databases/clipboard history in %LOCALAPPDATA%\\golauncher\\data, so this data is not managed by Scoop.",
-        "To avoid the built-in self-installer, run 'golauncher --portable'."
-    ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/eziq1/golauncher/releases/download/v0.6.0/golauncher_0.6.0_windows_amd64.zip",
-            "hash": "feac09b737acd1bc8f00cbc5ca0522cd60198a5f6b22dfc8baeaecea5c6fae9e"
+            "url": "https://github.com/eziq1/golauncher/releases/download/v0.9.0/golauncher_0.9.0_windows_amd64.zip",
+            "hash": "80e2174c7419ada7f5c3d7b6d25e2c6a4a08f71c8a7aea8a33c09a018168d51b"
         },
         "arm64": {
-            "url": "https://github.com/eziq1/golauncher/releases/download/v0.6.0/golauncher_0.6.0_windows_arm64.zip",
-            "hash": "067bacc6e1d3836209716785613ee4658f04ba8ba1f2b29ec92a91d83de7c94f"
+            "url": "https://github.com/eziq1/golauncher/releases/download/v0.9.0/golauncher_0.9.0_windows_arm64.zip",
+            "hash": "358e794860523835500ec7d1cac04a4ea1f5e54c2417ece8bf789a7f2aa46207"
         }
     },
     "bin": [
@@ -24,11 +20,13 @@
     "shortcuts": [
         [
             "golauncher.exe",
-            "golauncher"
+            "golauncher",
+            "--portal"
         ]
     ],
-    "pre_install": [
-        "if (!(Test-Path \"$dir\\config.json\")) { New-Item -ItemType File -Path \"$dir\\config.json\" -Force | Out-Null }"
+    "notes": [
+        "Settings are stored in %APPDATA%\\golauncher\\config.json (themes, plugins and scripts also live under %APPDATA%\\golauncher).",
+        "Databases, clipboard history, logs and update files are stored in %LOCALAPPDATA%\\golauncher."
     ],
     "checkver": {
         "github": "https://github.com/eziq1/golauncher"
@@ -44,7 +42,7 @@
         },
         "hash": {
             "url": "$baseurl/checksums.txt",
-            "regex": "$basename.*?([a-f0-9]{64})"
+            "regex": "$basename.*?([a-f0-9]{32,})"
         }
     }
 }
