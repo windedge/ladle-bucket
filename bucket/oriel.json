@@ -1,0 +1,45 @@
+{
+    "version": "0.10.0",
+    "description": "Personal mixed-timeline reader for RSS and RSSHub, in pure Go with native UI (MyGo). Desktop app and headless server in one program.",
+    "homepage": "https://github.com/yangflow/oriel",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yangflow/oriel/releases/download/v0.10.0/Oriel.Setup.0.10.0.amd64.exe#/dl.7z",
+            "hash": "0037ce017781b6d7da43066a48bf30a9ff95d8189ed761737c40c16eaaed902a"
+        },
+        "arm64": {
+            "url": "https://github.com/yangflow/oriel/releases/download/v0.10.0/Oriel.Setup.0.10.0.arm64.exe#/dl.7z",
+            "hash": "368474c5dbeeb1337816c8f2edd7438c87eceecfb9f5fb7d351d54cecbd3405b"
+        }
+    },
+    "bin": "Oriel.exe",
+    "shortcuts": [
+        [
+            "Oriel.exe",
+            "Oriel"
+        ]
+    ],
+    "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue"
+    ],
+    "notes": [
+        "Oriel keeps its database, logs and client settings in %AppData%\\Oriel, outside the Scoop directory, so uninstalling the app does not remove your reading data.",
+        "This is both the desktop app and a headless server: run 'oriel serve -data <dir> -port 7470' for the server mode.",
+        "The server password is read only from the ORIEL_PASSWORD environment variable, never from a command line flag.",
+        "The Windows installers are unsigned, so Windows SmartScreen may warn if you run them directly."
+    ],
+    "checkver": {
+        "github": "https://github.com/yangflow/oriel"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yangflow/oriel/releases/download/v$version/Oriel.Setup.$version.amd64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/yangflow/oriel/releases/download/v$version/Oriel.Setup.$version.arm64.exe#/dl.7z"
+            }
+        }
+    }
+}
