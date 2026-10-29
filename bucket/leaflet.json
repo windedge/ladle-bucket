@@ -1,31 +1,27 @@
 {
-    "version": "2026.10.11",
+    "version": "2026.10.14",
     "description": "A native desktop app where people and AI agents write living documents together",
     "homepage": "https://github.com/tacshi/Leaflet",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.11/leaflet-2026.10.11-windows-amd64.tar.gz",
-            "hash": "9f2049990a76e4e6d6075fc74b84c29bdca147035cb65e51aad5650231f78c1c"
+            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.14/leaflet-2026.10.14-windows-amd64.tar.gz",
+            "hash": "668855968a5d4e45f9dfd1fe3568c97e9f5caaef57b5299609ee76b5aff4ddd0"
         },
         "arm64": {
-            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.11/leaflet-2026.10.11-windows-arm64.tar.gz",
-            "hash": "31eb4fcf239f8a5d7c52083b09015747a2194e123a9f18c9a15e048a1fe02c51"
+            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.14/leaflet-2026.10.14-windows-arm64.tar.gz",
+            "hash": "91e333bdad5007c4348e925c2924b227373b41ff603af6be2a113270bf5323fc"
         }
     },
     "bin": "Leaflet.exe",
-    "persist": [
-        "data"
-    ],
+    "persist": "data",
     "shortcuts": [
         [
             "Leaflet.exe",
             "Leaflet"
         ]
     ],
-    "pre_install": [
-        "if (!(Test-Path \"$dir\\data\")) { New-Item -ItemType Directory -Path \"$dir\\data\" | Out-Null }"
-    ],
+    "pre_install": "if (!(Test-Path \"$dir\\data\")) { New-Item -ItemType Directory -Path \"$dir\\data\" | Out-Null }",
     "env_set": {
         "LEAFLET_DATA_DIR": "$persist_dir\\data"
     },
