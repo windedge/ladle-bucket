@@ -1,16 +1,16 @@
 {
-    "version": "0.10.0",
+    "version": "0.11.0",
     "description": "Personal mixed-timeline reader for RSS and RSSHub, in pure Go with native UI (MyGo). Desktop app and headless server in one program.",
     "homepage": "https://github.com/yangflow/oriel",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yangflow/oriel/releases/download/v0.10.0/Oriel.Setup.0.10.0.amd64.exe#/dl.7z",
-            "hash": "0037ce017781b6d7da43066a48bf30a9ff95d8189ed761737c40c16eaaed902a"
+            "url": "https://github.com/yangflow/oriel/releases/download/v0.11.0/Oriel.Setup.0.11.0.amd64.exe#/dl.7z",
+            "hash": "0443497424706caf5214f22ae971c4115c2a8a3c25b1eec061fee7993c3ab9d2"
         },
         "arm64": {
-            "url": "https://github.com/yangflow/oriel/releases/download/v0.10.0/Oriel.Setup.0.10.0.arm64.exe#/dl.7z",
-            "hash": "368474c5dbeeb1337816c8f2edd7438c87eceecfb9f5fb7d351d54cecbd3405b"
+            "url": "https://github.com/yangflow/oriel/releases/download/v0.11.0/Oriel.Setup.0.11.0.arm64.exe#/dl.7z",
+            "hash": "51dae690f35a3500397ad27926017336ca59bc83badd3d55243f9434cf1dc5e2"
         }
     },
     "bin": "Oriel.exe",
@@ -20,9 +20,7 @@
             "Oriel"
         ]
     ],
-    "pre_install": [
-        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue"
-    ],
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue",
     "notes": [
         "Oriel keeps its database, logs and client settings in %AppData%\\Oriel, outside the Scoop directory, so uninstalling the app does not remove your reading data.",
         "This is both the desktop app and a headless server: run 'oriel serve -data <dir> -port 7470' for the server mode.",
