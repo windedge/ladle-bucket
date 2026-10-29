@@ -1,12 +1,12 @@
 {
-    "version": "b11829",
+    "version": "b11976",
     "description": "LLM inference in C/C++ (SYCL-enabled)",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11829/llama-b11829-bin-win-sycl-x64.zip",
-            "hash": "db37f1ef45a70c086791587afe18ad359b58b24d1edcfdba69d8d7cf2680c22f"
+            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11976/llama-b11976-bin-win-sycl-x64.zip",
+            "hash": "a40f9f57b83c8bd7c8abbbaf1ee9e2b8c5be3f3790d899aeaeba743dc49a7776"
         }
     },
     "bin": [
