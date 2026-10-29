@@ -1,5 +1,5 @@
 {
-    "version": "0.4.11",
+    "version": "0.4.16",
     "description": "A native macOS and Windows proxy client for mihomo (Clash.Meta). Built in Go with MyGo, no webview.",
     "homepage": "https://marukolibro.github.io/Hop",
     "license": "GPL-3.0-or-later",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/marukolibro/Hop/releases/download/v0.4.11/hop-0.4.11-windows-amd64.tar.gz",
-            "hash": "af5e27d7ac69ac47845d1a8facece147fc934f78e58a6012fb2f7567a42972b1"
+            "url": "https://github.com/marukolibro/Hop/releases/download/v0.4.16/hop-0.4.16-windows-amd64.tar.gz",
+            "hash": "c243f79a059b1d40f6194a9b841b7598eef754f615c1b425294b3b0421f77acf"
         }
     },
     "bin": "Hop.exe",
