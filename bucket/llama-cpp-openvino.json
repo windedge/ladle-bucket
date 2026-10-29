@@ -1,12 +1,12 @@
 {
-    "version": "b11976",
+    "version": "b11977",
     "description": "LLM inference in C/C++ (OpenVINO-enabled)",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11976/llama-b11976-bin-win-openvino-2026.4.1-x64.zip",
-            "hash": "e6dd0a1c14327642ea05d0fa4dc7c27bdc95918fa13077108e372885bdc68461"
+            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11977/llama-b11977-bin-win-openvino-2026.4.1-x64.zip",
+            "hash": "c98715844e1074b527355bda16f97dbd02459c67f32d76314b653a733dd9d624"
         }
     },
     "bin": [
