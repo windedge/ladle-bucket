@@ -1,16 +1,16 @@
 {
-    "version": "2026.10.14",
+    "version": "2026.10.15",
     "description": "A native desktop app where people and AI agents write living documents together",
     "homepage": "https://github.com/tacshi/Leaflet",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.14/leaflet-2026.10.14-windows-amd64.tar.gz",
-            "hash": "668855968a5d4e45f9dfd1fe3568c97e9f5caaef57b5299609ee76b5aff4ddd0"
+            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.15/leaflet-2026.10.15-windows-amd64.tar.gz",
+            "hash": "11c3515a789e940e63203d7f1c0b885105c4e7869886642cec6221f84deac5ff"
         },
         "arm64": {
-            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.14/leaflet-2026.10.14-windows-arm64.tar.gz",
-            "hash": "91e333bdad5007c4348e925c2924b227373b41ff603af6be2a113270bf5323fc"
+            "url": "https://github.com/tacshi/Leaflet/releases/download/v2026.10.15/leaflet-2026.10.15-windows-arm64.tar.gz",
+            "hash": "5dbef47f980cda6bb28ca69a6b70462992314f84a6909ebfced6dac17832494b"
         }
     },
     "bin": "Leaflet.exe",
