@@ -1,12 +1,12 @@
 {
-    "version": "0.6.0",
+    "version": "0.6.2",
     "description": "Desktop app to run and control coding agents across local machines and servers",
     "homepage": "https://enowx.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/enowdev/enowx/releases/download/v0.6.0/enowx-0.6.0-windows-amd64.tar.gz",
-            "hash": "da0e4601a04d9fe726b0c4b2d2efb8e8dcb46a8c6130486d4db642ca4d472bfa"
+            "url": "https://github.com/enowdev/enowx/releases/download/v0.6.2/enowx-0.6.2-windows-amd64.tar.gz",
+            "hash": "15daa3ba82b6901e21326c4b69a8ea962ffa6ba8e2c35cf86cadcc43b676cd26"
         }
     },
     "bin": "enowx.exe",
@@ -16,9 +16,7 @@
             "enowX"
         ]
     ],
-    "persist": [
-        ".enowx-app"
-    ],
+    "persist": ".enowx-app",
     "env_set": {
         "ENOWX_HOME": "$persist_dir\\.enowx-app"
     },
