@@ -1,19 +1,15 @@
 {
-    "version": "0.7.0",
-    "description": "Fast, native database GUI and SQL client with a Redis browser",
+    "version": "0.7.2",
+    "description": "Fast, open-source database client for PostgreSQL, MySQL, ClickHouse, SQLite, DuckDB and Redis",
     "homepage": "https://github.com/saanuregh/dgopher",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/saanuregh/dgopher/releases/download/v0.7.0/dgopher-0.7.0-windows-amd64.tar.gz",
-            "hash": "b74f8eda847466ef1b4827d7399d17ec90d2802490677b96ba93613f6de83c3d"
+            "url": "https://github.com/saanuregh/dgopher/releases/download/v0.7.2/DGopher-Setup-0.7.2-amd64.exe#/dl.7z",
+            "hash": "3284be7eb0ed1884fea59038c373a82d9a1c64d355080b8d95ecfd92ba939c5a"
         }
     },
     "bin": "DGopher.exe",
-    "persist": [
-        "config",
-        "data"
-    ],
     "shortcuts": [
         [
             "DGopher.exe",
@@ -21,28 +17,31 @@
         ]
     ],
     "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse -Force -ErrorAction SilentlyContinue",
         "if (!(Test-Path \"$dir\\config\")) { New-Item -ItemType Directory -Path \"$dir\\config\" | Out-Null }",
         "if (!(Test-Path \"$dir\\data\")) { New-Item -ItemType Directory -Path \"$dir\\data\" | Out-Null }"
+    ],
+    "persist": [
+        "config",
+        "data"
     ],
     "env_set": {
         "DGOPHER_CONFIG_DIR": "$persist_dir\\config",
         "DGOPHER_DATA_DIR": "$persist_dir\\data"
     },
-    "notes": [
-        "DGopher keeps settings in %APPDATA%\\dgopher and window layout in %LOCALAPPDATA%\\dgopher by default. This manifest redirects both into the Scoop persist directory via DGOPHER_CONFIG_DIR and DGOPHER_DATA_DIR."
-    ],
     "checkver": {
         "github": "https://github.com/saanuregh/dgopher"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/saanuregh/dgopher/releases/download/v$version/dgopher-$version-windows-amd64.tar.gz"
+                "url": "https://github.com/saanuregh/dgopher/releases/download/v$version/DGopher-Setup-$version-amd64.exe#/dl.7z"
             }
         },
         "hash": {
             "url": "$baseurl/SHA256SUMS",
-            "regex": "(?m)^([a-fA-F0-9]{64})\\s+$basename$"
+            "find": "$basename"
         }
     }
 }
