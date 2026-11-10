@@ -1,12 +1,12 @@
 {
-    "version": "3.16.4-build.92",
+    "version": "3.18.0-build.94",
     "description": "BaoCut: an AI video agent with an editable timeline. Transcribe, subtitle, translate, dub, cut and animate.",
     "homepage": "https://baocut.com",
     "license": "BaoCut-Community-1.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JimLiu/baocut/releases/download/baocut-v3.16.4-build.92/BaoCut-3.16.4-build.92-win-x64-vulkan.zip",
-            "hash": "24d5ee2b9328bf5fc3a9c2103c9ee328fc25df5cac865d9832119b775a68169d"
+            "url": "https://github.com/JimLiu/baocut/releases/download/baocut-v3.18.0-build.94/BaoCut-3.18.0-build.94-win-x64-vulkan.zip",
+            "hash": "34eaa16b600056a6b2f5ac26fbdd294721d3f993cfe9ff50221be9c443315156"
         }
     },
     "bin": "BaoCut.exe",
@@ -31,7 +31,7 @@
     },
     "checkver": {
         "github": "https://github.com/JimLiu/baocut",
-        "regex": "baocut-v([\\d.]+-build\\.[0-9]+)"
+        "regex": "baocut-v([\\d.]+-build\\.\\d+)"
     },
     "autoupdate": {
         "architecture": {
@@ -40,8 +40,7 @@
             }
         },
         "hash": {
-            "url": "$baseurl/BaoCut-$version-win-x64-vulkan.zip.sha256",
-            "regex": "([a-fA-F0-9]{64})\\s+\\*?BaoCut-$version-win-x64-vulkan\\.zip"
+            "url": "$baseurl/BaoCut-$version-win-x64-vulkan.zip.sha256"
         }
     }
 }
